@@ -1,0 +1,14 @@
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/bin/Debug/net9.0/projeto-compiler
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/bin/Debug/net9.0/projeto-compiler.deps.json
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/bin/Debug/net9.0/projeto-compiler.runtimeconfig.json
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/bin/Debug/net9.0/projeto-compiler.dll
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/bin/Debug/net9.0/projeto-compiler.pdb
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/projeto-compiler.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/projeto-compiler.AssemblyInfoInputs.cache
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/projeto-compiler.AssemblyInfo.cs
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/projeto-compiler.csproj.CoreCompileInputs.cache
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/projeto-compiler.dll
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/refint/projeto-compiler.dll
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/projeto-compiler.pdb
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/projeto-compiler.genruntimeconfig.cache
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/ref/projeto-compiler.dll
