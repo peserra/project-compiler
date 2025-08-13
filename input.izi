@@ -1,7 +1,7 @@
-abc123 123
-
-123aa
-aaa
-isidro
-palavra
-teste
+program
+    read(a);
+    read(b);
+    a = 1 + 2;
+    write(a);
+    write(b);
+endprog

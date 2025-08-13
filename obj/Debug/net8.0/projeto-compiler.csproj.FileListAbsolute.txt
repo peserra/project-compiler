@@ -13,3 +13,6 @@
 /mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/projeto-compiler.pdb
 /mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/projeto-compiler.genruntimeconfig.cache
 /mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/ref/projeto-compiler.dll
+/mnt/c/code/ufabc/compiladores/bin/Debug/net8.0/Antlr4.Runtime.Standard.dll
+/mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/projeto-compiler.csproj.AssemblyReference.cache
+/mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/projeto-compiler.csproj.CopyComplete

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/pserra/code/ufabc/compiladores/projeto-compiler.csproj": {}
+    "/mnt/c/code/ufabc/compiladores/projeto-compiler.csproj": {}
   },
   "projects": {
-    "/home/pserra/code/ufabc/compiladores/projeto-compiler.csproj": {
+    "/mnt/c/code/ufabc/compiladores/projeto-compiler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/pserra/code/ufabc/compiladores/projeto-compiler.csproj",
+        "projectUniqueName": "/mnt/c/code/ufabc/compiladores/projeto-compiler.csproj",
         "projectName": "projeto-compiler",
-        "projectPath": "/home/pserra/code/ufabc/compiladores/projeto-compiler.csproj",
+        "projectPath": "/mnt/c/code/ufabc/compiladores/projeto-compiler.csproj",
         "packagesPath": "/home/pserra/.nuget/packages/",
-        "outputPath": "/home/pserra/code/ufabc/compiladores/obj/",
+        "outputPath": "/mnt/c/code/ufabc/compiladores/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/pserra/.nuget/NuGet/NuGet.Config"
@@ -38,11 +38,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Antlr4": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Antlr4.Runtime.Standard": {
               "target": "Package",
-              "version": "[4.6.6, )"
+              "version": "[4.13.1, )"
             }
           },
           "imports": [
