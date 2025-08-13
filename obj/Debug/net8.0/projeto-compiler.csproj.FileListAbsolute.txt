@@ -1,0 +1,15 @@
+/mnt/c/code/ufabc/compiladores/bin/Debug/net8.0/projeto-compiler
+/mnt/c/code/ufabc/compiladores/bin/Debug/net8.0/projeto-compiler.deps.json
+/mnt/c/code/ufabc/compiladores/bin/Debug/net8.0/projeto-compiler.runtimeconfig.json
+/mnt/c/code/ufabc/compiladores/bin/Debug/net8.0/projeto-compiler.dll
+/mnt/c/code/ufabc/compiladores/bin/Debug/net8.0/projeto-compiler.pdb
+/mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/projeto-compiler.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/projeto-compiler.AssemblyInfoInputs.cache
+/mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/projeto-compiler.AssemblyInfo.cs
+/mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/projeto-compiler.csproj.CoreCompileInputs.cache
+/mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/projeto-compiler.sourcelink.json
+/mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/projeto-compiler.dll
+/mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/refint/projeto-compiler.dll
+/mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/projeto-compiler.pdb
+/mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/projeto-compiler.genruntimeconfig.cache
+/mnt/c/code/ufabc/compiladores/obj/Debug/net8.0/ref/projeto-compiler.dll
