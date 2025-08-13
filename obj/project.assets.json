@@ -40,19 +40,19 @@
     ]
   },
   "packageFolders": {
-    "/home/pserra/.nuget/packages/": {}
+    "/home/codespace/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/c/code/ufabc/compiladores/projeto-compiler.csproj",
+      "projectUniqueName": "/workspaces/project-compiler/projeto-compiler.csproj",
       "projectName": "projeto-compiler",
-      "projectPath": "/mnt/c/code/ufabc/compiladores/projeto-compiler.csproj",
-      "packagesPath": "/home/pserra/.nuget/packages/",
-      "outputPath": "/mnt/c/code/ufabc/compiladores/obj/",
+      "projectPath": "/workspaces/project-compiler/projeto-compiler.csproj",
+      "packagesPath": "/home/codespace/.nuget/packages/",
+      "outputPath": "/workspaces/project-compiler/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/pserra/.nuget/NuGet/NuGet.Config"
+        "/home/codespace/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -70,6 +70,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -97,7 +102,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.118/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
