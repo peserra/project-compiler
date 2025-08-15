@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Z497kUlUiiI=",
+  "dgSpecHash": "b+b2jnlFLfk=",
   "success": true,
-  "projectFilePath": "/Users/pserra/code/ufabc/compiladores/projeto-compiler/projeto-compiler.csproj",
+  "projectFilePath": "/home/pserra/code/ufabc/compiladores/projeto-compiler.csproj",
   "expectedPackageFiles": [
-    "/Users/pserra/.nuget/packages/antlr4.runtime.standard/4.13.1/antlr4.runtime.standard.4.13.1.nupkg.sha512"
+    "/home/pserra/.nuget/packages/antlr4.runtime.standard/4.13.1/antlr4.runtime.standard.4.13.1.nupkg.sha512"
   ],
   "logs": []
 }

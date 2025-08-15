@@ -1,4 +1,4 @@
-// Generated from /Users/pserra/code/ufabc/compiladores/projeto-compiler/LangDef.g4 by ANTLR 4.13.1
+// Generated from /home/pserra/code/ufabc/compiladores/LangDef.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -7,75 +7,25 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface LangDefListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link LangDefParser#prog}.
+	 * Enter a parse tree produced by {@link LangDefParser#start}.
 	 * @param ctx the parse tree
 	 */
-	void enterProg(LangDefParser.ProgContext ctx);
+	void enterStart(LangDefParser.StartContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link LangDefParser#prog}.
+	 * Exit a parse tree produced by {@link LangDefParser#start}.
 	 * @param ctx the parse tree
 	 */
-	void exitProg(LangDefParser.ProgContext ctx);
+	void exitStart(LangDefParser.StartContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link LangDefParser#bloco}.
+	 * Enter a parse tree produced by {@link LangDefParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void enterBloco(LangDefParser.BlocoContext ctx);
+	void enterExpression(LangDefParser.ExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link LangDefParser#bloco}.
+	 * Exit a parse tree produced by {@link LangDefParser#expression}.
 	 * @param ctx the parse tree
 	 */
-	void exitBloco(LangDefParser.BlocoContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link LangDefParser#cmd}.
-	 * @param ctx the parse tree
-	 */
-	void enterCmd(LangDefParser.CmdContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link LangDefParser#cmd}.
-	 * @param ctx the parse tree
-	 */
-	void exitCmd(LangDefParser.CmdContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link LangDefParser#cmdRead}.
-	 * @param ctx the parse tree
-	 */
-	void enterCmdRead(LangDefParser.CmdReadContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link LangDefParser#cmdRead}.
-	 * @param ctx the parse tree
-	 */
-	void exitCmdRead(LangDefParser.CmdReadContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link LangDefParser#cmdWrite}.
-	 * @param ctx the parse tree
-	 */
-	void enterCmdWrite(LangDefParser.CmdWriteContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link LangDefParser#cmdWrite}.
-	 * @param ctx the parse tree
-	 */
-	void exitCmdWrite(LangDefParser.CmdWriteContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link LangDefParser#cmdAttr}.
-	 * @param ctx the parse tree
-	 */
-	void enterCmdAttr(LangDefParser.CmdAttrContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link LangDefParser#cmdAttr}.
-	 * @param ctx the parse tree
-	 */
-	void exitCmdAttr(LangDefParser.CmdAttrContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link LangDefParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterExpr(LangDefParser.ExprContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link LangDefParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitExpr(LangDefParser.ExprContext ctx);
+	void exitExpression(LangDefParser.ExpressionContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link LangDefParser#term}.
 	 * @param ctx the parse tree
@@ -86,4 +36,14 @@ public interface LangDefListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitTerm(LangDefParser.TermContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link LangDefParser#factor}.
+	 * @param ctx the parse tree
+	 */
+	void enterFactor(LangDefParser.FactorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link LangDefParser#factor}.
+	 * @param ctx the parse tree
+	 */
+	void exitFactor(LangDefParser.FactorContext ctx);
 }
