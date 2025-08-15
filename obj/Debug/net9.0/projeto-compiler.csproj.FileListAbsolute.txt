@@ -12,3 +12,7 @@
 /Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/projeto-compiler.pdb
 /Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/projeto-compiler.genruntimeconfig.cache
 /Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/ref/projeto-compiler.dll
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/bin/Debug/net9.0/Antlr4.Runtime.Standard.dll
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/projeto-compiler.csproj.AssemblyReference.cache
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/projeto-compiler.sourcelink.json
+/Users/pserra/code/ufabc/compiladores/projeto-compiler/obj/Debug/net9.0/projeto-.2129048A.Up2Date

@@ -1,63 +1,64 @@
-using System;
-using Antlr4.Runtime.Misc;
-namespace projeto_compiler.CustomListeners; // ou o namespace dos arquivos gerados
+namespace projeto_compiler.CustomListeners;
 
 public class LangDefCustomListener : LangDefBaseListener
 {
-    
-    private Dictionary<string, double> variaveis = new();
 
-    // Avalia uma expressão recursivamente
-    private double AvaliarExpr(LangDefParser.ExprContext context)
+    public override void EnterStart(LangDefParser.StartContext context)
     {
-        double resultado = AvaliarTerm(context.term(0));
+        double result = AvaliarExpression(context.expression());
+        Console.WriteLine(" " + result);
+    }
+
+    private double AvaliarExpression(LangDefParser.ExpressionContext context)
+    {
+        double result = AvaliarTerm(context.term(0));
         for (int i = 1; i < context.term().Length; i++)
         {
-            var operador = context.OPERATOR(i - 1).GetText();
-            var valor = AvaliarTerm(context.term(i));
-            resultado = operador switch
+            string op = context.GetChild(2 * i - 1).GetText(); // '+' or '-'
+            double value = AvaliarTerm(context.term(i));
+            result = op switch
             {
-                "+" => resultado + valor,
-                "-" => resultado - valor,
-                "*" => resultado * valor,
-                "/" => resultado / valor,
-                _ => resultado
+                "+" => result + value,
+                "-" => result - value,
+                _ => throw new Exception("Operador inválido")
             };
         }
-        return resultado;
+
+        return result;
     }
 
     private double AvaliarTerm(LangDefParser.TermContext context)
     {
-        if (context.ID() != null)
+        double result = AvaliarFactor(context.factor(0));
+        for (int i = 1; i < context.factor().Length; i++)
         {
-            var nome = context.ID().GetText();
-            if (variaveis.TryGetValue(nome, out double valor))
-                return valor;
-            else
-                throw new Exception($"Variável '{nome}' não definida.");
+            string op = context.GetChild(2 * i - 1).GetText(); // '*' or '/'
+            double value = AvaliarFactor(context.factor(i));
+            result = op switch
+            {
+                "*" => result * value,
+                "/" => value == 0 ? throw new DivideByZeroException("Divisao por zero.") : result / value,
+                _ => throw new Exception("Operador inválido")
+            };
         }
-        else if (context.NUMBER() != null)
-        {
-            return double.Parse(context.NUMBER().GetText());
-        }
-        throw new Exception("Termo inválido.");
+
+        return result;
     }
 
-    public override void EnterCmdAttr(LangDefParser.CmdAttrContext context)
+    private double AvaliarFactor(LangDefParser.FactorContext context)
     {
-        var nome = context.ID().GetText();
-        var valor = AvaliarExpr(context.expr());
-        variaveis[nome] = valor;
-        Console.WriteLine($"Atribuição: {nome} = {valor}");
-    }
-
-    public override void EnterCmdWrite(LangDefParser.CmdWriteContext context)
-    {
-        var nome = context.ID().GetText();
-        if (variaveis.TryGetValue(nome, out double valor))
-            Console.WriteLine(valor);
+        if (context.NUMBER() != null)
+        {
+            return double.Parse(context.NUMBER().GetText(), System.Globalization.CultureInfo.InvariantCulture);
+        }
+        else if (context.expression() != null)
+        {
+            // Expressao com parentesis
+            return AvaliarExpression(context.expression());
+        }
         else
-            Console.WriteLine($"Variável '{nome}' não definida.");
+        {
+            throw new Exception("Fator inválido");
+        }
     }
 }

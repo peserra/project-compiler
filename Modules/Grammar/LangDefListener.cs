@@ -32,75 +32,25 @@ using IToken = Antlr4.Runtime.IToken;
 [System.CLSCompliant(false)]
 public interface ILangDefListener : IParseTreeListener {
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.prog"/>.
+	/// Enter a parse tree produced by <see cref="LangDefParser.start"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterProg([NotNull] LangDefParser.ProgContext context);
+	void EnterStart([NotNull] LangDefParser.StartContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.prog"/>.
+	/// Exit a parse tree produced by <see cref="LangDefParser.start"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitProg([NotNull] LangDefParser.ProgContext context);
+	void ExitStart([NotNull] LangDefParser.StartContext context);
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.bloco"/>.
+	/// Enter a parse tree produced by <see cref="LangDefParser.expression"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void EnterBloco([NotNull] LangDefParser.BlocoContext context);
+	void EnterExpression([NotNull] LangDefParser.ExpressionContext context);
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.bloco"/>.
+	/// Exit a parse tree produced by <see cref="LangDefParser.expression"/>.
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	void ExitBloco([NotNull] LangDefParser.BlocoContext context);
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.cmd"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterCmd([NotNull] LangDefParser.CmdContext context);
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.cmd"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitCmd([NotNull] LangDefParser.CmdContext context);
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.cmdRead"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterCmdRead([NotNull] LangDefParser.CmdReadContext context);
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.cmdRead"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitCmdRead([NotNull] LangDefParser.CmdReadContext context);
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.cmdWrite"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterCmdWrite([NotNull] LangDefParser.CmdWriteContext context);
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.cmdWrite"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitCmdWrite([NotNull] LangDefParser.CmdWriteContext context);
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.cmdAttr"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterCmdAttr([NotNull] LangDefParser.CmdAttrContext context);
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.cmdAttr"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitCmdAttr([NotNull] LangDefParser.CmdAttrContext context);
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.expr"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void EnterExpr([NotNull] LangDefParser.ExprContext context);
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.expr"/>.
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	void ExitExpr([NotNull] LangDefParser.ExprContext context);
+	void ExitExpression([NotNull] LangDefParser.ExpressionContext context);
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="LangDefParser.term"/>.
 	/// </summary>
@@ -111,5 +61,15 @@ public interface ILangDefListener : IParseTreeListener {
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	void ExitTerm([NotNull] LangDefParser.TermContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="LangDefParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterFactor([NotNull] LangDefParser.FactorContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="LangDefParser.factor"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitFactor([NotNull] LangDefParser.FactorContext context);
 }
 } // namespace projeto_compiler

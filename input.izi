@@ -1,10 +1,8 @@
 program
     read(a);
     read(b);
-    a = 1 + 2;
+    a = 1.4;
     b = 3;
     c = a + b;
-    write(a);
-    write(b);
     write(c);
 endprog

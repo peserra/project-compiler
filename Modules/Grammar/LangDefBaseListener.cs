@@ -37,89 +37,29 @@ using ParserRuleContext = Antlr4.Runtime.ParserRuleContext;
 [System.CLSCompliant(false)]
 public partial class LangDefBaseListener : ILangDefListener {
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.prog"/>.
+	/// Enter a parse tree produced by <see cref="LangDefParser.start"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterProg([NotNull] LangDefParser.ProgContext context) { }
+	public virtual void EnterStart([NotNull] LangDefParser.StartContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.prog"/>.
+	/// Exit a parse tree produced by <see cref="LangDefParser.start"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitProg([NotNull] LangDefParser.ProgContext context) { }
+	public virtual void ExitStart([NotNull] LangDefParser.StartContext context) { }
 	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.bloco"/>.
+	/// Enter a parse tree produced by <see cref="LangDefParser.expression"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void EnterBloco([NotNull] LangDefParser.BlocoContext context) { }
+	public virtual void EnterExpression([NotNull] LangDefParser.ExpressionContext context) { }
 	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.bloco"/>.
+	/// Exit a parse tree produced by <see cref="LangDefParser.expression"/>.
 	/// <para>The default implementation does nothing.</para>
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
-	public virtual void ExitBloco([NotNull] LangDefParser.BlocoContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.cmd"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCmd([NotNull] LangDefParser.CmdContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.cmd"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCmd([NotNull] LangDefParser.CmdContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.cmdRead"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCmdRead([NotNull] LangDefParser.CmdReadContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.cmdRead"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCmdRead([NotNull] LangDefParser.CmdReadContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.cmdWrite"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCmdWrite([NotNull] LangDefParser.CmdWriteContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.cmdWrite"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCmdWrite([NotNull] LangDefParser.CmdWriteContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.cmdAttr"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterCmdAttr([NotNull] LangDefParser.CmdAttrContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.cmdAttr"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitCmdAttr([NotNull] LangDefParser.CmdAttrContext context) { }
-	/// <summary>
-	/// Enter a parse tree produced by <see cref="LangDefParser.expr"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void EnterExpr([NotNull] LangDefParser.ExprContext context) { }
-	/// <summary>
-	/// Exit a parse tree produced by <see cref="LangDefParser.expr"/>.
-	/// <para>The default implementation does nothing.</para>
-	/// </summary>
-	/// <param name="context">The parse tree.</param>
-	public virtual void ExitExpr([NotNull] LangDefParser.ExprContext context) { }
+	public virtual void ExitExpression([NotNull] LangDefParser.ExpressionContext context) { }
 	/// <summary>
 	/// Enter a parse tree produced by <see cref="LangDefParser.term"/>.
 	/// <para>The default implementation does nothing.</para>
@@ -132,6 +72,18 @@ public partial class LangDefBaseListener : ILangDefListener {
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	public virtual void ExitTerm([NotNull] LangDefParser.TermContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="LangDefParser.factor"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterFactor([NotNull] LangDefParser.FactorContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="LangDefParser.factor"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitFactor([NotNull] LangDefParser.FactorContext context) { }
 
 	/// <inheritdoc/>
 	/// <remarks>The default implementation does nothing.</remarks>
