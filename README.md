@@ -3,6 +3,7 @@
 ### Para rodar o projeto é necessário ter o .NET (dotnet) 8 instalado no pc, ou utilizar o github codespaces
 
 #### Instalando o dotnet
+- clone esse repositório ou baixe o zip (clique no botão "code", na primeira aba clique em "download .zip")
 - Siga o link: [Instalador dotnet 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 - com o dotnet instalado, execute os seguintes comandos no terminal, na pasta raiz (a que contém o arquivo LangDef.g4)
   - dotnet build
